@@ -1,0 +1,89 @@
+.header {
+    background-image: linear-gradient(to bottom right, rgba($color-1, 0.7), rgba($color-2, 0.7)), url(../img/seo.jpg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+
+        &-item {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        a {
+            color: white;
+        }
+
+        &-link:link,
+        &-visited:visited {
+            font-size: 1.5rem;
+            color: #fff;
+            text-decoration: none;
+            font-family: $font-display;
+            text-transform: uppercase;
+            text-align: end;
+            padding: 1.5rem;
+            display: block;
+            transition: all 0.2s;
+        }
+
+        &-link:hover,
+        &-visited:active {
+            transform: scale(1.1);
+            transform: translateY(-2px);
+        }
+    }
+
+    .heading-1 {
+        font-size: 6rem;
+        font-family: inherit;
+        font-weight: 400;
+        color: white;
+    }
+
+    .heading-2 {
+        font-size: 4.5rem;
+        font-family: inherit;
+        font-weight: 400;
+        color: #000;
+    }
+
+    .heading-3 {
+        font-size: 3.5rem;
+        font-family: inherit;
+        font-weight: 400;
+        color: white;
+    }
+
+    .btn {
+        color: black;
+
+        &__link:link,
+        &__link:visited {
+            background-color: white;
+            color: black;
+            font-weight: 700;
+            font-size: $font-display;
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1.5rem 2rem;
+            display: inline-block;
+            border-radius: 10rem;
+            transition: all 0.2s;
+        }
+
+        &__link:hover {
+            transform: translateY(-3px);
+        }
+
+        &__link:active {
+            transform: translateY(-1px);
+        }
+    }
+}

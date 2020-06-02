@@ -1,0 +1,22 @@
+.seo-features {
+    background-image: linear-gradient(to bottom right, $color-2, $color-1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    padding: 7rem;
+
+    &-content {
+        font-size: 1.5rem;
+        font-family: $font-display;
+        font-size: 2rem;
+        color: honeydew;
+
+        justify-self: center;
+
+        h2 {
+            text-align: center;
+        }
+    }
+}

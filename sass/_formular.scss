@@ -1,0 +1,14 @@
+.formular {
+    padding: 5rem;
+
+    &__content {
+        font-size: 2rem;
+        font-family: $font-display;
+
+        display: flex;
+        flex-direction: column;
+
+        &-contact-form {
+        }
+    }
+}
