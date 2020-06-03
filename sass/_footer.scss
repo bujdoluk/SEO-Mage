@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    .nav__items-1 {
+    .foot__items-1 {
         list-style: none;
         line-height: 2;
 
@@ -34,7 +34,7 @@
         }
     }
 
-    .nav__items-2 {
+    .foot__items-2 {
         list-style: none;
         line-height: 2;
 
@@ -63,7 +63,7 @@
         }
     }
 
-    .nav__items-3 {
+    .foot__items-3 {
         list-style: none;
         line-height: 2;
         margin-top: -7px;
@@ -75,7 +75,7 @@
 
         flex-basis: 33%;
 
-        .nav__item {
+        .foot__item {
             &-img {
                 width: 2.5rem;
                 height: 2.5rem;

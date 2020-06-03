@@ -16,25 +16,31 @@
 <body>
     <div class="container">
         <header class="header">
-            <ul class="header__list">
-                <li class="header__list-item header__list-1"><a href="#" class="header__list-link">Pricing</a></li>
-                <li class="header__list-item header__list-2"><a href="#" class="header__list-link">Blog</a></li>
-                <li class="header__list-item header__list-3"><a href="#" class="header__list-link">Knowledge</a></li>
-                <li class="header__list-item header__list-4"><a href="#" class="header__list-link">Sign in</a></li>
-            </ul>
+            <nav id="nav_bar">
+                <ul class="header__list">
+                    <li class="header__list-item header__list-1">
+                        <a href="#price" class="header__list-link">Pricing</a>
+                    </li>
+                    <li class="header__list-item header__list-2">
+                        <a href="#features" class="header__list-link">Features</a>
+                    </li>
+                    <li class="header__list-item header__list-3">
+                        <a href="#contact" class="header__list-link">Contact us</a>
+                    </li>
+                    <li class="header__list-item header__list-4">
+                        <a href="#references" class="header__list-link">References</a>
+                    </li>
+                </ul>
+            </nav>
             <h1 class="heading-1">Juicy SEO tools you will love</h1>
             <h3 class="heading-3">Find long tail keywords</h3>
             <h3 class="heading-3">Made for an effective SEO workflow</h3>
-            <div class="btn">
-                <a href="#" class="btn__link">Free trial</a>
+            <div>
+                <a href="#" class="btn">Free trial</a>
             </div>
         </header>
 
-        <div class="features">
-
-        </div>
-
-        <div class="seo-features">
+        <div class="seo-features" id="features">
             <div class="seo-features-content">
                 <h2 class="heading-2">Find the right keywords</h2>
                 <p>Just start with a seed keyword or simply enter your competitor's domain. Evaluate a keyword ideas
@@ -67,7 +73,7 @@
             </div>
         </div>
 
-        <div class="references">
+        <div class="references" id="references">
             <div class="heading-2">
                 <h2 class="heading-2">Our customers can't live without us!</h2>
             </div>
@@ -93,7 +99,7 @@
             </div>
         </div>
 
-        <div class="price-plans">
+        <div class="price-plans" id="price">
             <div class="heading-2">
                 <h2 class="heading-2">Start using it today</h2>
             </div>
@@ -143,82 +149,63 @@
             </div>
         </div>
 
-        <div class="formular">
-            <div class="heading-2">
-                <h2 class="heading-2">We're happy to hear from you</h2>
-            </div>
-            <div class="formular__content">
-                <form method="post" action="#" class="formular__content-contact-form">
+        <div class="formular" id="contact">
+            <h3>Contact us</h3>
+            <form class="form">
+                <div class="id">
                     <div class="name">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                        <input id="name" type="text" name="name">
                     </div>
-
                     <div class="email">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                        <input id="email" type="text" name="email" placeholder=" elon.musk@tesla.com">
                     </div>
+                </div>
+                <div class="message">
+                    <label id="message" for="message">Message</label>
 
-                    <div class="select">
-                        <label for="find-us">How did you find us?</label>
-                        <select name="find-us" id="find-us">
-                            <option value="friends" selected>Friends</option>
-                            <option value="search">Search engine</option>
-                            <option value="ad">Advertisements</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="newsletter">
-                        <label>Newsletter?</label>
-                        <input type="checkbox" name="news" id="news" checked> Yes, please
-                    </div>
-                    <div class="drop">
-                        <label>Drop us a line</label>
-                        <textarea name="message" placeholder="Your message"></textarea>
-                    </div>
-                    <div class="send">
-                        <label>&nbsp;</label>
-                        <input type="submit" value="Send it!">
-                    </div>
-                </form>
-            </div>
+                    <textarea name="message" id="#" cols="30" rows="10" placeholder="Write something..."></textarea>
+                    <button type="submit">SUBMIT</button>
+                </div>
+            </form>
         </div>
 
         <footer class="footer">
-            <ul class="nav__items-1">
-                <li class="nav__item"><a href="#" class="nav__items-1__link">Plans and Cricing</a></li>
-                <li class="nav__item"><a href="#" class="nav__items-1__link">Testimonials</a></li>
-                <li class="nav__item"><a href="#" class="nav__items-1__link">Jobs and Careers</a></li>
-                <li class="nav__item"><a href="#" class="nav__items-1__link">Terms and Conditions</a></li>
-                <li class="nav__item"><a href="#" class="nav__items-1__link">Privacy Policy</a></li>
-                <li class="nav__item"><a href="#" class="nav__items-1__link">About us</a></li>
+            <ul class="foot__items-1">
+                <li class="foot__item"><a href="#" class="foot__items-1__link">Plans and Cricing</a></li>
+                <li class="foot__item"><a href="#" class="foot__items-1__link">Testimonials</a></li>
+                <li class="foot__item"><a href="#" class="foot__items-1__link">Jobs and Careers</a></li>
+                <li class="foot__item"><a href="#" class="foot__items-1__link">Terms and Conditions</a></li>
+                <li class="foot__item"><a href="#" class="foot__items-1__link">Privacy Policy</a></li>
+                <li class="foot__item"><a href="#" class="foot__items-1__link">About us</a></li>
             </ul>
-            <ul class="nav__items-2">
-                <li class="nav__item"><a href="#" class="nav__items-1__link">Keyword Finder</a></li>
-                <li class="nav__item"><a href="#" class="nav__items-1__link">Link Miner</a></li>
-                <li class="nav__item"><a href="#" class="nav__items-1__link">Site Profiler</a></li>
-                <li class="nav__item"><a href="#" class="nav__items-1__link">Data exports</a></li>
-                <li class="nav__item"><a href="#" class="nav__items-1__link">Browser extensions</a></li>
-                <li class="nav__item"><a href="#" class="nav__items-1__link">Serp checker</a></li>
+            <ul class="foot__items-2">
+                <li class="foot__item"><a href="#" class="foot__items-1__link">Keyword Finder</a></li>
+                <li class="foot__item"><a href="#" class="foot__items-1__link">Link Miner</a></li>
+                <li class="foot__item"><a href="#" class="foot__items-1__link">Site Profiler</a></li>
+                <li class="foot__item"><a href="#" class="foot__items-1__link">Data exports</a></li>
+                <li class="foot__item"><a href="#" class="foot__items-1__link">Browser extensions</a></li>
+                <li class="foot__item"><a href="#" class="foot__items-1__link">Serp checker</a></li>
             </ul>
-            <ul class="nav__items-3">
-                <li class="nav__item">Follow us: <img src="img/facebook.png" alt="Facebook logo"
-                        class="nav__item-img brightness">
-                    <img src="img/twitter.png" alt="Twitter logo" class="nav__item-img brightness">
+            <ul class="foot__items-3">
+                <li class="foot__item">Follow us: <img src="img/facebook.png" alt="Facebook logo"
+                        class="foot__item-img brightness">
+                    <img src="img/twitter.png" alt="Twitter logo" class="foot__item-img brightness">
                 </li>
-                <li class="nav__item"><img src="img/phone%20(1).png" alt="Logo" class="nav__item-img brightness">+(420)
-                    789456123</li>
-                <li class="nav__item">FAQ</li>
-                <li class="nav__item">Blog</li>
-                <li class="nav__item">Guide</li>
-                <li class="nav__item">Slovakia</li>
+                <li class="foot__item"><img src="img/phone%20(1).png" alt="Logo"
+                        class="foot__item-img brightness">+(420) 789456123</li>
+                <li class="foot__item">FAQ</li>
+                <li class="foot__item">Blog</li>
+                <li class="foot__item">Guide</li>
+                <li class="foot__item">Slovakia</li>
             </ul>
             <p class="copyright">
                 &copy; Copyright 2020 by Lukas Bujdos. Feel free to use this project for your own purposes.
-                This does NOT apply if you plan to produce your own videocourse or tutorials based on this project.
             </p>
         </footer>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>
