@@ -93,11 +93,13 @@ body {
     top: 0;
     position: fixed;
     z-index: 100;
-    width: 95.25%;
-    background-color: yellowgreen; }
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
   .header__list {
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
     list-style: none; }
     .header__list-item {
       font-size: 2rem;
@@ -145,16 +147,19 @@ body {
     text-transform: uppercase;
     color: black;
     background-color: white;
-    display: inline-block;
     padding: 1rem 2rem;
-    border-radius: 100px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); }
+    border-radius: 100rem;
+    align-items: center; }
+  .header .button {
+    display: block;
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
 
 .references {
-  background-color: #fff;
+  background-image: linear-gradient(to bottom right, #dee528, #00a539);
   height: 40rem;
   padding: 4rem; }
   .references__clients {
@@ -183,7 +188,6 @@ body {
     text-align: center; }
 
 .seo-features {
-  background-image: linear-gradient(to bottom right, #dee528, #00a539);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2;
@@ -194,7 +198,6 @@ body {
     font-size: 1.5rem;
     font-family: "Josefin Sans", sans-serif;
     font-size: 2rem;
-    color: honeydew;
     justify-self: center; }
     .seo-features-content h2 {
       text-align: center; }
@@ -219,7 +222,10 @@ body {
       background-color: #fff;
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
       padding: 3rem 3rem;
-      position: relative; }
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
       .price-plans-box-item .best__value {
         border: 1px solid #48da48;
         position: absolute;
@@ -244,7 +250,18 @@ body {
         font-size: 2rem;
         font-family: "Josefin Sans", sans-serif;
         text-decoration: none;
-        color: black; }
+        color: black;
+        margin-top: 1.5rem; }
+      .price-plans-box-item .btn {
+        border: 1px solid black;
+        padding: 0.5rem 1.5rem;
+        border-radius: 100rem; }
+      .price-plans-box-item .btn-premium {
+        border: 1px solid #48da48;
+        background-color: #48da48;
+        color: white;
+        padding: 0.5rem 1.5rem;
+        border-radius: 100rem; }
 
 .formular {
   height: 65rem; }
