@@ -9,6 +9,12 @@ $color-4: #000;
 $font-primary: "Nunito", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
 
+// BREAKPOINTS RESPONSIVE
+$bp-big: 60rem; // 950/16 = 60rem
+$bp-medium: 53rem; // 850/16 = 53rem
+$bp-small: 47rem; // 750/16 = 47rem
+$bp-smallest: 31rem; // 500/16 = 31rem
+
 *,
 *::before,
 *::after {
@@ -28,6 +34,10 @@ body {
     font-weight: 300;
     line-height: 1.6;
     padding: 0 3rem 3rem 3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 0;
+    }
 }
 
 .container {

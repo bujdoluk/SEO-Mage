@@ -1,0 +1,59 @@
+.navigation {
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: flex-end;
+
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    width: calc(100% - 6rem);
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+
+        &-item {
+            font-size: 2rem;
+            color: #fff;
+
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 1rem;
+            }
+        }
+
+        a {
+            color: white;
+            transition: all 2s;
+        }
+
+        &-link:link,
+        &-visited:visited {
+            font-size: 1.5rem;
+            color: #fff;
+            text-decoration: none;
+            font-family: $font-display;
+            text-transform: uppercase;
+            text-align: end;
+            padding: 1.5rem;
+            display: block;
+            transition: all 0.2s;
+
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+
+        &-link:hover,
+        &-visited:active {
+            transform: scale(1.1);
+            transform: translateY(-2px);
+        }
+    }
+}

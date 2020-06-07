@@ -1,19 +1,23 @@
 .references {
     background-image: linear-gradient(to bottom right, $color-2, $color-1);
-    height: 40rem;
+    //height: 40rem;
     padding: 4rem;
 
     &__clients {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: $font-display;
         padding: 2rem;
         display: flex;
-        position: relative;
+
+        @media only screen and (max-width: $bp-big) {
+            flex-direction: column;
+        }
 
         & blockquote {
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 2rem;
 
             & cite {
                 display: flex;
@@ -28,9 +32,6 @@
                 margin-top: 5rem;
                 margin-right: 2rem;
             }
-        }
-
-        & blockquote::before {
         }
     }
 

@@ -3,54 +3,12 @@
     background-size: cover;
     height: 70rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        height: 55rem;
+    }
+
     display: flex;
     flex-direction: column;
-
-    #nav_bar {
-        top: 0;
-        position: fixed;
-        z-index: 100;
-        background-color: yellowgreen;
-
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    &__list {
-        display: flex;
-        align-items: flex-end;
-        list-style: none;
-
-        &-item {
-            font-size: 2rem;
-            color: #fff;
-        }
-
-        a {
-            color: white;
-            transition: all 2s;
-        }
-
-        &-link:link,
-        &-visited:visited {
-            font-size: 1.5rem;
-            color: #fff;
-            text-decoration: none;
-            font-family: $font-display;
-            text-transform: uppercase;
-            text-align: end;
-            padding: 1.5rem;
-            display: block;
-            transition: all 0.2s;
-        }
-
-        &-link:hover,
-        &-visited:active {
-            transform: scale(1.1);
-            transform: translateY(-2px);
-        }
-    }
 
     .heading-1 {
         font-size: 6rem;
@@ -59,6 +17,14 @@
         color: white;
         text-align: center;
         margin-top: 10rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 4.5rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 2rem;
+        }
     }
 
     .heading-2 {
@@ -67,6 +33,10 @@
         font-weight: 400;
         color: #000;
         text-align: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 3.5rem;
+        }
     }
 
     .heading-3 {
@@ -75,6 +45,14 @@
         font-weight: 400;
         color: white;
         text-align: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2.5rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 2rem;
+        }
     }
 
     .btn {
